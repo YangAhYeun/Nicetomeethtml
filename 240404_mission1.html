@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,h2,h3,ul,li,p,main,header,footer,article,aside,nav{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 스타일 */
+        li{list-style-type: none;}
+
+        /* 머리 */
+        header{background-color: rgb(230, 115, 115);}
+        header h1{
+            color: beige; 
+            padding: 10px;
+            font-size: 30pt;
+        }
+
+        /* 메인 */
+        main li{
+            background-color: rgb(105, 182, 156);
+        }
+        /* 메인-왼쪽 메뉴 */
+        
+        main nav li{
+            padding: 10px;
+            margine: 10px;
+
+        }
+        /* 메인-가운데 기사 내용 */
+        article{
+            padding: 30px;
+        }
+        main h2{
+            color:rgb(84, 82, 87);
+            padding: 10px;
+            font-size: 20;
+        }
+        /* 메인-오른쪽 기타 */
+        aside{
+            padding: 20px;
+            margine: 10px;
+        }
+
+        /* 발 */
+        footer{
+            background-color: rgb(180, 196, 201);
+            padding: 10px;
+        }
+        /* 스타일 끝 */
+
+        /* 반응형 화면 만들기 */
+        @media screen and (min-width:768px) and(max-width:1024px){
+            nav {float: left; width: 25%;}
+            article {float: left; width: 75%;}
+            aside{clear: both;}
+        }
+        @media screen and (min-width:1025px){
+            section{max-width: 1200px; margin: 0 auto;}
+            nav {float: left; width: 20%;}
+            article {float: left; width: 50%;}
+            aside{float: left; width: 30%;}
+        }
+        /* 반응형 화면 만들기 끝 */
+
+        /* clearfix 속성 넣기 */
+        /* clearfix : float(띄우다)를 올바르게 인지하지 못하는 것을 계산할 수 있도록 사용 */
+            main:after{
+            content:"";
+            display: block;
+            clear: both; 
+            /* 부모 요소의 높이를 자식 요소들로부터 가져옴 */
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <div class="contents" id="">    </div> 옛날방식 -->
+
+    <section>
+        <header>
+            <h1>Musee d'Orsay</h1>
+        </header>
+        <main>
+            <nav>
+                <ul>
+                    <li><a href="#">작가의 작품</a></li>
+                    <li><a href="#">작가의 시대</a></li>
+                    <li><a href="#">작가의 일생</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h2>PICTURES</h2>
+                <p>
+                    <a href="#"></a>피리부는 소년</a><br>
+                    <a href="#"></a>고흐의 방</a><br>
+                    <a href="#"></a>황색 그리스도가 있는 화가의 자화상</a><br>
+                    <a href="#"></a>오페라좌의 관현악단</a><br>
+                    <a href="#"></a>만종</a><br>
+                    <a href="#"></a>제비꽃 장식을 단 베르트모리즈</a><br>
+                </p>
+            </article>
+            <aside>
+                <ul>
+                <li><h3>Workshop Go</h3><a href="#">Life drawing workshop</a></li>
+                <li><h3>Summer Exhibition</h3><a href="#">A-level Summer Exibition Online 2010</a></li>
+                <li><h3>RA Collection</h3><a href="#"></h3><a href="#">RA Collection</a></li>
+            </ul>
+            </aside>
+        </main>
+        <footer>
+            &copy;2024 Musee d'Orsay Webpage Designed ONeul All rights reserved.
+        </footer>
+    </section>
+
+
+</body>
+</html>
