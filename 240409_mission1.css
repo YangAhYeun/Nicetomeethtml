@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap')
+
+
+main{
+    padding:0px;
+    margin:0px;
+}
+section:nth-child(1){
+    height:500px;
+    background-image: url(./img/bread1.jpg);
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+
+}
+section:nth-child(2){
+    height:500px;
+    background-image: url(./img/bread2.jpg);
+    background-size: cover;
+    padding: 100px;
+
+}
+section:nth-child(3){
+    height:500px;
+    background-image: url(./img/cafe.jpg);
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+}
+
+
+h1{
+    font-size: 4rem;
+    font-weight: 400;
+    font-style: nomal;
+    color:rgb(89, 90, 90);
+    font-family: "Galada", cursive;
+  font-style: normal;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 300;
+    font-style: nomal;
+    color:rgb(89, 90, 89);
+    font-family: "Galada", cursive;
+    font-style: normal;
+}
+
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+}
+
+tbody{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+}
+section:nth-child(1) p{}
+section:nth-child(3) p{}
+aside{
+    align-items: left;
+}
+section:nth-child(2){}
+
