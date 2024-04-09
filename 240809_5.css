@@ -1,0 +1,78 @@
+
+@charset "UTF-8";
+/* 다국적 언어 및 특수문자, 엔티티 등을 표현 */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script:400');
+*{
+
+}
+    html{
+        font-size: 100%;
+        margin: 0 auto;
+        padding: 0;
+}
+
+body{
+    color:rgb(95, 93, 93);
+    font-family: Arial, 'Helvetica', sans-serif;
+    text-align: center;
+}
+main{
+    overflow: auto;/*overflow : 넘치는 흐름 - figma 프레임 바깥을 넘는 요소도 스크롤을 통해 노출*/
+}
+
+section{
+    padding: 1rem;
+    height: 100vh;
+
+    /*정렬*/
+    display: flex; /*가로로 정렬을 하기 위한 최선의 방식 중 하나*/
+    /*가로줄*/justify-content: center;
+    /*세로줄align-items: center;*/
+    flex-direction: column;
+}
+/* 
+.area1,.area3{
+    background-color: rgb(255, 189, 189);
+}
+.area2,.area4{
+    background-color: rgb(255, 245, 189);
+}
+ 
+section:nth-child(odd){
+    background-color: rgb(255, 189, 189);
+}
+section:nth-child(even){
+    background-color: rgb(255, 245, 189);
+}*/
+
+section:nth-child(1){
+    height: 500px;
+    background-image: url(./img/bg_fl1.jpg);
+}
+section:nth-child(2){
+    height: 500px;
+    background-image: url(./img/bg_fl2.jpg);
+}
+section:nth-child(3){
+    height: 500px;
+    background-image: url(./img/bg_fl3.jpg)
+}
+section:nth-child(4){
+    height: 500px;
+    background-image: url(./img/bg_fl4.jpg)
+}
+
+h1{
+    font-family: Nanum Brush Script;
+    font-size: 6rem;
+    font-weight: 600;
+    font-style: nomal;
+    color:rgb(25, 87, 51)
+}
+
+p{
+    line-height: 36px;
+    padding: 2rem;
+    background-color:rgba(240, 248, 255, 0.356)
+}
