@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding:20; 
+        }
+        h1, h2, h3, a{
+            font-weight:100;
+            color:#0088dd;
+            margin: 0;
+
+        }
+        h1{
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow:2px 2px 2px rgba(44, 44, 44, 0.487);
+            padding-bottom: 10px;
+            font-weight: bold;
+
+
+        }
+        h2{
+            font-size: 8px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+        }
+
+        h3{
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .intro{
+            font-size: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            font-weight: bold;
+         }
+         .image-container{
+            position:relative;
+            background-image: url(https://images.unsplash.com/photo-1628126235206-5260b9ea6441?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhY2VzaGlwfGVufDB8fDB8fHww);
+            width: 100%;
+            background-size: cover;
+            height: 300px;
+            background-position:center;
+         }
+         /* 마우스 호버됬을 때기타 화면에서 보여지는 요소보다 먼저 */
+        /*::after, ::before, content: ‘’;-> 가상의 레이어 추가 -> 직접 작성한 코드는 해치지 않으려고 하고, 주로 꾸밈 요소 스타일 요소 수정, 추가, 편집*/
+        .image-container:hover::before {
+            content: '';
+            position: absolute; 
+            top: 0; 
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom right, red, rgba(0, 0, 255, 0.6));
+        }
+         p{
+            font-size: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            line-height: 1.4em;
+            font-color:darkblue;
+        }
+        p.intro:first-line{font-weight: bold;
+            
+        }
+        p.credits{
+            font-style: italic;
+            text-align: right;}
+
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>KSLV-1 나로</h1>
+    <h2>KSLV-1 "Naro"</h2>
+    <div class="image-container"></div>
+    <p class="intro">KSLV-1(Korea space launch vehicel-1, 한국형발사체-1)<a class="space" href="http://www.kari.re.kr/narospacecenter/">나로호(羅老號)</a> 한국항공우주연구원이 KSLV 계획에 따라 2002년 
+        개발에 착수하여 2009년과 2010년, 2013년 세 차례 발사한 대한민국 최초의 우주발사체 로켓.
+
+        <h3>Naro History</h3>
+        <p>이름 '나로'는 대국민 명칭 공모전을 통해 선정되었으며, 로켓이 발사된 한국 최초의 우주센터 나로우주센터의 이름이자, 
+            해당 우주센터가 위치한 전라남도 고흥군 외나로도에서 따온 것이다. 나로도는 섬의 모습이 바다에서 보면 바람에 날리는 
+            비단 같다는 데서 유래한 이름이라 전해진다.</p>
+        
+            <p class="credits">한국항공우주연구원, 러시아 흐루니체프</p>
+</body>
+</html>
+
